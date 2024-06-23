@@ -67,7 +67,7 @@ class all_in_one():
                 finaldata=" ".join(l)
                 return finaldata
         def askai(data):#basically u can ask anything , data should be given in sting format
-                apikey="AIzaSyBLDyo6bqBMcZFRIpNypqmPYE5hadRe4iM"
+                apikey="API key"
                 palm.configure(api_key=apikey)
                 modelid='models/text-bison-001'
                 toBeAsked=data#to be given in string 
@@ -88,7 +88,7 @@ class all_in_one():
 
                 return completion.result
         def askai21(content , doubt ):
-             ai21.api_key = 'k8dwk10uMv7bv7wytJohF4SLdFDf8wu5'
+             ai21.api_key = 'API key        '
              a=ai21.Answer.execute(context=content, question=doubt)
              data={}
              data["answer"]=a.answer
