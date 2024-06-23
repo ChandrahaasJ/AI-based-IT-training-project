@@ -14,7 +14,7 @@ def transcribe(link):#Here pass the link only , copy it from the url
         finaldata=" ".join(l)
         return finaldata
 def askgem(question):
-                apikey="AIzaSyCHAf6umJfrfEoyd4u_quG6BIKjGOFqud4"
+                apikey="API key"
                 gemini.configure(api_key=apikey)
                 model = gemini.GenerativeModel('gemini-pro')
                 response = model.generate_content(question)
