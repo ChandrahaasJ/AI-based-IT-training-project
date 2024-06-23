@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        .input-group {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+
+        .btn-warning {
+            border: none;
+            border-radius: 4px;
+            padding: 10px 20px;
+            cursor: pointer;
+            background-color: #000;
+            color: #fff;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            display: flex;
+            align-items: center;
+        }
+
+        .btn-warning:hover {
+            background-color: #0056b3;
+        }
+
+        .btn-warning i {
+            margin-right: 5px;
+        }
+
+        input[type="file"] {
+            display: none;
+        }
+
+        .button-group {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .action-button {
+            border: none;
+            border-radius: 4px;
+            padding: 10px 20px;
+            margin-right: 10px; /* Added margin for spacing */
+            cursor: pointer;
+            background-color: #000;
+            color: #fff;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .action-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <div class="input-group">
+            <label for="pdf" class="btn-warning">
+                <i class="fas fa-upload"></i> Upload File
+            </label>
+            <input type="file" id="pdf" name="pdf" placeholder="Upload your file">
+        </div>
+        <div class="button-group">
+            <form action="/getYTvid" method="post">
+                <button class="action-button" type="submit">Get Youtube Videos</button>
+            </form>
+            <form action="/answers" method="post">
+                <button class="action-button" type="submit">Generate MCQs</button>
+            </form>
+            <form action="/getarticles" method="post">
+                <button class="action-button" type="submit">Get Articles</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

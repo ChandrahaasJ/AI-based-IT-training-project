@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <title>Beta Compiler</title>
+</head>
+
+<body>
+    <center>
+        <h1>--Beta Compiler--</h1>
+        <form id="myform" name="myform" method="post" action="compilecode">
+            <h3>Code</h3>
+            <textarea rows="13" cols="100" id="code" name="code"><%=prev%></textarea>
+            <br />
+            <h3>Terminal</h3>
+            <textarea rows="10" cols="100" id="input" name="input"> <%=output%></textarea>
+            <br />
+            Language:<select name="lang">
+                
+                <option value="Python">Python</option>
+            </select>
+            Compile with Input:
+            <input type="radio" name="inputRadio" value="true" />yes
+            <input type="radio" name="inputRadio" id="inputRadio" value="false" />No
+            <br />
+            <input type="submit" value="submit" name="submit" />
+            <a href="/compilecodeai">
+                <button class="btn-12"><span>Neil explains</span></button>
+            </button>
+            </a>
+        </form>
+        
+        <h2>Neil explains</h2>
+        <textarea rows="50" cols="150" id="input" name="input"> <%=analysis%></textarea>
+        
+    </center>
+   
+</body>
+
+</html>
